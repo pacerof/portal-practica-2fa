@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal de Práctica 2FA</title>
+  <meta name="description" content="Sitio ficticio para practicar la verificación en dos pasos con una aplicación Authenticator. No pide datos reales.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e7d32'/%3E%3Cpath d='M10 15v-3a6 6 0 0 1 12 0v3' stroke='white' stroke-width='2.5' fill='none'/%3E%3Crect x='8' y='15' width='16' height='11' rx='2' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="banda-practica" role="note">
+    <strong>Sitio de práctica ficticio.</strong>
+    Nunca escribas aquí tu contraseña ni tu correo reales. Lo que hagas se guarda solo en este navegador.
+  </div>
+
+  <header class="cabecera">
+    <a class="marca" href="#inicio">
+      <span class="marca-icono" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="7" fill="currentColor"/><path d="M10 15v-3a6 6 0 0 1 12 0v3" stroke="var(--fondo)" stroke-width="2.5" fill="none"/><rect x="8" y="15" width="16" height="11" rx="2" fill="var(--fondo)"/></svg>
+      </span>
+      <span>Portal de Práctica 2FA</span>
+    </a>
+    <nav class="navegacion" aria-label="Secciones">
+      <a href="#inicio" data-ruta="inicio">Inicio</a>
+      <a href="#cuenta" data-ruta="cuenta">Mi cuenta</a>
+      <a href="#escenarios" data-ruta="escenarios">Escenarios</a>
+      <a href="#resumen" data-ruta="resumen">Resumen</a>
+    </nav>
+  </header>
+
+  <main id="vista" class="vista" tabindex="-1"></main>
+
+  <footer class="pie">
+    Material del Programa de Ingeniería de Sistemas y Computación · Facultad de Ingeniería ·
+    Universidad del Quindío. Este sitio no tiene servidor: no envía ni recoge datos.
+  </footer>
+
+  <noscript><p class="aviso aviso-error">El Portal de Práctica necesita JavaScript activado.</p></noscript>
+
+  <script src="vendor/qrcode.js"></script>
+  <script src="totp.js"></script>
+  <script src="escenarios.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
