@@ -148,11 +148,11 @@
   function mensajeRechazo(r) {
     if (r.motivo === 'largo') return 'El código de verificación tiene 6 dígitos. Escribe solo los números que muestra tu aplicación.';
     if (r.motivo === 'anterior') return 'Ese código es de la <strong>entrada anterior</strong> de tu aplicación. Escanea el QR nuevo y escribe el código de la entrada <strong>' + esc(r.esperada.etiqueta) + '</strong>.';
-    if (r.motivo === 'revocado') return 'Ese código sale de la <strong>entrada antigua</strong> de tu aplicación, la del factor que revocaste. Ya no sirve: usa la entrada nueva y borra la vieja de la aplicación (§6 de tu guía).';
+    if (r.motivo === 'revocado') return 'Ese código sale de la <strong>entrada antigua</strong> de tu aplicación, la del factor que revocaste. Ya no sirve: usa la entrada nueva y borra la vieja de la aplicación (sección 6 de tu guía).';
     if (r.motivo === 'hora') {
       var cuando = r.minutos === 0 ? 'unos segundos de diferencia' :
         (Math.abs(r.minutos) + (Math.abs(r.minutos) === 1 ? ' minuto ' : ' minutos ') + (r.minutos > 0 ? 'en el futuro' : 'en el pasado'));
-      return 'Ese código sería válido con la hora corrida (' + cuando + '). <strong>La hora de tu teléfono no coincide con la real.</strong> Activa la fecha y hora automáticas (Guía 00, §5) y escribe el código que aparezca después.';
+      return 'Ese código sería válido con la hora corrida (' + cuando + '). <strong>La hora de tu teléfono no coincide con la real.</strong> Activa la fecha y hora automáticas (Guía 00, sección 5) y escribe el código que aparezca después.';
     }
     return 'Código incorrecto. Revisa que estés mirando la entrada <strong>' + esc(EMISOR) + '</strong> de tu aplicación y escribe el código que se ve <em>ahora</em> (cambia cada 30 segundos).';
   }
@@ -195,7 +195,7 @@
       '<div style="flex:1;min-width:240px">' +
       '<ol class="pasos">' +
       '<li><strong>En el teléfono:</strong> abre tu aplicación Authenticator y toca la opción para <strong>agregar una cuenta</strong>.</li>' +
-      '<li>Elige <strong>escanear un código QR</strong> y apunta la cámara a este código. (Los nombres exactos están en la §' + (contexto === 'nuevo' ? '7' : '2') + ' de tu guía.)</li>' +
+      '<li>Elige <strong>escanear un código QR</strong> y apunta la cámara a este código. (Los nombres exactos están en la sección ' + (contexto === 'nuevo' ? '7' : '2') + ' de tu guía.)</li>' +
       '<li>En la aplicación aparece <strong>' + esc(EMISOR) + '</strong> con un código de 6 dígitos que cambia cada 30 segundos.</li>' +
       '<li><strong>En el computador:</strong> escribe ese código abajo.</li>' +
       '</ol>' +
@@ -279,7 +279,7 @@
     var titulo = contexto === 'nuevo' ? 'Registra tu factor nuevo' : 'Vincula tu aplicación';
     var intro = contexto === 'nuevo'
       ? 'Entraste con un código de respaldo. Ahora registra la aplicación en tu teléfono «nuevo». En la aplicación aparecerá una entrada más, <strong>' + esc(factor.etiqueta) + '</strong>: es la que vale desde ahora.'
-      : 'Escanea el QR con la aplicación que elegiste y confirma con el primer código. Sigue la §2 de tu guía.';
+      : 'Escanea el QR con la aplicación que elegiste y confirma con el primer código. Sigue la sección 2 de tu guía.';
     return '<h1>' + titulo + '</h1>' + cicloHtml() +
       '<p class="entradilla">' + intro + '</p>' +
       '<section class="tarjeta">' + bloqueQr(factor, contexto) + '</section>' +

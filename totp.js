@@ -1,4 +1,4 @@
-// Códigos de verificación TOTP (RFC 6238) con los parámetros que leen las seis aplicaciones del
+// Códigos de verificación TOTP (RFC 6238) con los parámetros que leen las tres aplicaciones del
 // material: HMAC-SHA-1, 6 dígitos, intervalos de 30 s (referencia-2fa.md §8).
 // SHA-1 y HMAC van en JavaScript puro, sin crypto.subtle, para que el portal funcione igual desde
 // GitHub Pages, desde un archivo local y en Node (pruebas: node practica/pruebas-totp.js).

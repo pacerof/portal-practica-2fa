@@ -14,7 +14,7 @@ window.ESCENARIOS = [
     ],
     correcta: 1,
     senal: 'El dominio real es lo que va justo antes de la primera «/»: aquí es verificacion-uq.co, no google.com. Además: urgencia y amenaza de suspensión.',
-    porque: 'Un sitio falso puede reenviar tu contraseña y tu código al sitio real en el mismo instante: 30 segundos sobran. El código temporal no protege contra una página falsa; lo que protege es mirar el dominio antes de escribir. (Guía 00, §2.)'
+    porque: 'Un sitio falso puede reenviar tu contraseña y tu código al sitio real en el mismo instante: 30 segundos sobran. El código temporal no protege contra una página falsa; lo que protege es mirar el dominio antes de escribir. (Guía 00, sección 2.)'
   },
   {
     id: 'E2',
@@ -28,7 +28,7 @@ window.ESCENARIOS = [
     ],
     correcta: 1,
     senal: 'Tú no iniciaste ningún acceso. La insistencia es la técnica: se llama fatiga de MFA.',
-    porque: 'Si llega una solicitud que no pediste, alguien ya tiene tu contraseña. Aprobar le da la entrada; ignorar deja la contraseña comprometida. Rechazar y cambiar la contraseña cierra las dos puertas. Por eso Microsoft Authenticator pide escribir un número que solo aparece en la pantalla de quien inicia sesión. (Guía 00; Guía 02 §5.2.)'
+    porque: 'Si llega una solicitud que no pediste, alguien ya tiene tu contraseña. Aprobar le da la entrada; ignorar deja la contraseña comprometida. Rechazar y cambiar la contraseña cierra las dos puertas. Por eso Microsoft Authenticator pide escribir un número que solo aparece en la pantalla de quien inicia sesión. (Guía 00; Guía 02, sección 5.2.)'
   },
   {
     id: 'E3',
@@ -70,7 +70,7 @@ window.ESCENARIOS = [
     ],
     correcta: 1,
     senal: 'El cambio en la hora del teléfono.',
-    porque: 'El código se calcula con la clave y la hora. Si la hora del teléfono está corrida, el código es «correcto» para otra hora. Borrar la entrada es peligroso: si no puedes volver a escanear, pierdes ese factor. (Guía 00, §5; sección «Si algo sale mal» de cada guía.)'
+    porque: 'El código se calcula con la clave y la hora. Si la hora del teléfono está corrida, el código es «correcto» para otra hora. Borrar la entrada es peligroso: si no puedes volver a escanear, pierdes ese factor. (Guía 00, sección 5; sección «Si algo sale mal» de cada guía.)'
   },
   {
     id: 'E6',

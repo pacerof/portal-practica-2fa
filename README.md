@@ -48,7 +48,7 @@ Verificado el 2026-11-03 en el navegador: alta, código incorrecto, hora corrida
 cierre de sesión, ingreso con código, pérdida, código de respaldo inválido y reutilizado, factor
 nuevo, código de la entrada anterior y de la revocada, escenarios, resumen, vista móvil y modo
 claro/oscuro. El QR generado se decodificó con OpenCV y coincide con el URI `otpauth://`.
-**Falta:** escanearlo con las seis aplicaciones en teléfonos reales (Android e iOS).
+**Falta:** escanearlo con las tres aplicaciones en teléfonos reales (Android e iOS).
 
 ## Publicar en GitHub Pages
 
